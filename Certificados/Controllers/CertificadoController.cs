@@ -23,6 +23,7 @@ namespace Certificados.Controllers
             return View();
         }
 
+
         public static byte[] CriarCertificado(string conteudo, byte[] planoFundo, bool textoNegrito, bool textoItalico, int tamanhoFonte)
         {
             
