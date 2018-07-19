@@ -1,0 +1,145 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #F8F8FF;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select {
+    max-width: 280px;
+}
+
+div.navbar.navbar-inverse.navbar-fixed-top{
+    background-color: #4682B4 !important;
+    border-color: #4682B4 !important;
+}
+
+a.navbar-brand{
+    color: white !important;
+    font-size: 25px;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.div-link {
+    padding: 5px 5px 5px 25px !important;
+}
+
+div#area-ferramentas{
+    display: none;
+}
+
+div.conteudo {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+div.margin-top25 {
+    margin-top: 25px !important;
+}
+
+div.margin-top20 {
+    margin-top: 20px !important;
+}
+
+div.margin-bottom20 {
+    margin-bottom: 20px !important;
+}
+
+div.margin-top15 {
+    margin-top: 15px !important;
+}
+
+div.margin-top35 {
+    margin-top: 35px !important;
+}
+
+button#botao-italico{
+    margin-right: 5px;
+}
+
+button#botao-negrito{
+     margin-left: 5px;
+}
+
+div.margin-bottom15 {
+    margin-bottom: 15px !important;
+}
+
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+    page[size="A4"] {
+        width: 21cm;
+        height: 29.7cm;
+    }
+
+        page[size="A4"][layout="portrait"] {
+            width: 29.7cm;
+            height: 21cm;
+        }
+
+.conteudo textarea {
+    min-height: 300px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.btn-file > input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    top: 0px;
+    padding: 5px;
+}
+
+.div-btn-anexar-fundo {
+    position: relative;
+}
+
+.page-certificado img {
+    width: 100%;
+}
+
+div.ferramentas.form-group{
+    float: left !important;
+    display: inline-block;
+}
+
+div.margin-right20{
+    margin-right: 20px !important;
+}
+
+.page-img-certificado textarea {
+    background: transparent;
+    color: black;
+    resize: none;
+    border: 0 none;
+    width: 29.7cm;
+    height: 21cm;
+    font-size: 5em;
+    outline: none;
+    height: 100%;
+    position: absolute;
+}

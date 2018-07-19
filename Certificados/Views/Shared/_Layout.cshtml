@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/scriptsbase")
+
+    @RenderSection("scripts", required: false)
+
+    <script src="~/Scripts/toastr.js"></script>
+    <script src="~/Scripts/jquery.blockUI.js"></script>
+
+    <link href="~/Content/toastr.min.css" rel="stylesheet" />
+    <link href="~/Content/sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+
+</head>
+<body id="content" class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="col-md-12">
+                @Html.ActionLink("Certificados", "Index", "Certificado", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="body-content">
+            @RenderBody()
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+</body>
+</html>

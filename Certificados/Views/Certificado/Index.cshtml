@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/ScriptsViews/certificado")
+
+<div class="conteudo">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>1 - Criar Modelo</h2>
+            <div class="row margin-bottom20 margin-top20">
+                <div class="col-md-2 col-sm-12 div-btn-anexar-fundo">
+                    <span class="btn btn-info btn-file"><span>Anexar Imagem de Fundo</span><input class="row upload-plano-fundo" type="file" /></span>
+                </div>
+                <div class="col-md-4  col-sm-12 div-link">
+                    <a class="link" href="https://materiais.even3.com.br/templates-de-certificados"> Dica: Templates de Certificados</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="area-ferramentas" class="row">
+        <div class="margin-top35 col-md-12">
+            <h3>Ferramentas de edição</h3>
+            <div class="ferramentas form-group">
+                <label for="tamanhoFonte">Fonte</label>
+                <div class="margin-right20">
+                    <button id="botao-italico" onclick="aplicarItalicoTexto()" class="btn btn-secondary">Itálico</button>
+                    <button id="botao-negrito" onclick="aplicarNegritoTexto()" class="btn btn-secondary">Negrito</button>
+                </div>
+            </div>
+            <div class="ferramentas form-group">
+                <label for="tamanhoFonte">Tamanho do texto</label>
+                <select class="form-control" id="tamanhoFonte" onchange="mudarTamanhoTexto()">
+                    <option value="40">40</option>
+                    <option selected value="50">50</option>
+                    <option value="60">60</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 margin-top15">
+            <page id="certificado" size="A4" class="page-certificado" layout="portrait">
+                <div class="texto-certificado"></div>
+                <div class="page-img-certificado"></div>
+            </page>
+        </div>
+    </div>
+
+    <div class="margin-top15 row">
+        <div class="col-md-12">
+            <h2>2 - Importar participantes</h2>
+            <p>Copie o conteúdo da planilha excel, incluindo cabeçalhos e cole aqui.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 margin-top15">
+            <textarea id="participantes"></textarea>
+        </div>
+    </div>
+
+    <div class="margin-top25 row">
+        <div class="col-md-12">
+            <h2>3 - Enviar certificados</h2>
+            <button class="btn btn-success" onclick="enviarCertificados()">Enviar por email</button>
+        </div>
+    </div>
+
+</div>
+
